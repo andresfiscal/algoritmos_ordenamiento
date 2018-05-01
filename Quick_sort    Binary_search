@@ -46,7 +46,7 @@ def BinarySearch_Recursive(Array, x, lB, uB):
     
     if lB == uB:
         if x==Array[middlePoint]:
-            #Element x has been found
+            
             return middlePoint
         else:
             return -1
@@ -71,5 +71,5 @@ print(Sort)
 search = int((input("Digite los numeros separados por comas: ")))
 index = BinarySearch(Sort, search)
 indexRecursive = BinarySearch_Recursive(Sort, search, 0, len(ArrayInt))
-print("Startin count in 0 without recursivity: ",index)
-print("Startin count in 0 with recursivity: ",indexRecursive)
+print("comenzar cuenta en 0 sin recursividad: ",index)
+print("comenzar cuenta en 0 con recursividad: ",indexRecursive)
