@@ -47,8 +47,8 @@ public static void main(String[] args) throws IOException {
 	public static int[] Merge_Sort(int[] Array)
 	{
 		
-		int[] LeftSubArray = new int[Array.length/2];//Array of size of the left half of array parameter 
-		int[] RightSubArray = new int[Array.length-(Array.length/2)];//Array of size of the right half of array parameter
+		int[] LeftSubArray = new int[Array.length/2]; 
+		int[] RightSubArray = new int[Array.length-(Array.length/2)];
 		
 		int[] SortedL = new int[Array.length/2];
 		int[] SortedR = new int[Array.length-(Array.length/2)];
