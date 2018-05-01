@@ -1,0 +1,15 @@
+def insertion_sort(unsorted):
+  for i in range (1, len(unsorted) ):
+    index =i
+    x = unsorted[i]
+    
+    while(index > 0 and x < unsorted[index - 1]):
+      unsorted[index] = unsorted[index - 1]
+      index -= 1
+      
+    unsorted[index] = x
+    
+  return unsorted
+
+array = [2,6,8,1,3,4,7,9]
+print (insertion_sort(array))
