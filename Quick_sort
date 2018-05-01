@@ -1,0 +1,29 @@
+def Quick_Sort(Array):
+
+    less_subarray = []
+    greather_subarray = []
+    result = []
+    if len(Array)<=1:
+        return Array
+    else:
+        pivot=Array[0]
+        for i in range(1,len(Array)):
+            
+            if Array[i]<pivot:
+                less_subarray.append(Array[i])
+            else:
+                greather_subarray.append(Array[i])
+        
+        result.extend(Quick_Sort(less_subarray))
+        result.append(pivot)
+        result.extend(Quick_Sort(greather_subarray))
+        return result
+        
+ArrayS= (input("Digite los numeros separados por comas: ")).split(",")
+ArrayInt = []
+
+for i in range(len(ArrayS)):
+    ArrayInt.append(int(ArrayS[i]))
+
+Sort = Quick_Sort(ArrayInt)
+print(Sort)
